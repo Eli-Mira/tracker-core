@@ -1,0 +1,29 @@
+# Schedule configuration
+# Supports cron mode and interval mode
+
+# API Tracker
+api_tracker:
+  mode: cron
+  cron:
+    hour: 2
+    minute: 0
+    day_of_week: "*"
+  # Alternative interval mode:
+  # mode: interval
+  # seconds: 86400
+
+# News Tracker
+news_tracker:
+  mode: cron
+  cron:
+    hour: 7
+    minute: 0
+    day_of_week: "*"
+  # Alternative interval mode:
+  # mode: interval
+  # seconds: 43200  # Every 12 hours
+
+# Alert thresholds
+alerts:
+  consecutive_failures: 3
+  check_interval_minutes: 10
